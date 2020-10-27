@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+header {
+	background-color:rgba( 255, 255, 255, 0 );
+	height: 40px;
+	position: fixed;
+	top: 48px;
+	transition: top 0.2s ease-in-out 0s;
+	width: 100%;
+	z-index: 2;
+}
+
+.nav-up {
+/* 	top: 10px; */
+top: -97px;
+}

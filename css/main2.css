@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+.headerbar {
+	background-color: rgb(255, 255, 255);
+	height: 90px;
+	position: fixed;
+	width: 100%;
+	z-index: 20;
+    top: 0px;
+    left: 0px;
+}
+
+.logodiv {
+	width: 100%;
+	/* float: left; */
+	/* margin-left: calc(50% - 3.35rem); */
+	position: absolute;
+	text-align: center;
+	/* z-index: -1; */
+}
+

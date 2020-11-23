@@ -59,9 +59,13 @@
 <body>
     
 	<header class="headerbar">
+        <div class="logodiv">
         <img class="logoimg" src="img/logo(noname).png">
+        <span class="logospan1">투자그룹</span>
+        <span class="logospan2">위더스</span>
+        </div>
         <div class="headerbuttondiv" >
-        <button type="button" class="headerbutton btn btn-outline-primary" data-dropdown="#dropdown-standard1">소개</button>
+        <button type="button" class="headerbutton btn btn-outline-primary" data-dropdown="#dropdown-standard1">회사소개</button>
         <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor" id="dropdown-standard1">
             <ul>
                 <li><a href="#"onclick="notready();">회사소개</a></li>
@@ -69,7 +73,7 @@
                 <li><a href="#"onclick="notready();">위더스의 비전</a></li>
             </ul>
         </div>
-        <button type="button" class="headerbutton btn btn-outline-primary"onclick="notready2();">체험신청</button>
+        <button type="button" class="headerbutton btn btn-outline-primary"onclick="notready2();">수익인증</button>
  
         <button type="button" class="headerbutton btn btn-outline-primary" data-dropdown="#dropdown-standard2">투자관리상품</button>
         <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor" id="dropdown-standard2">
@@ -122,96 +126,43 @@
         <div class="swiper-button-next" style="color:#e67401;"></div>
         <div class="swiper-button-prev" style="color:#e67401;"></div>
         <div class="swipercontentsdiv">
-            <h1 style="font-family: 'Black Han Sans', sans-serif;"> WITH US 위더스 투자그룹</h1>
-            <h5 style="font-family: 'Jua', sans-serif;">위더스 투자그룹은<br>풍부한 실전경험과 핵심 기술을 바탕으로<br>개인 투자자분들의 보다 나은 미래에<br>동행합니다.</h3>
+            <h1 class="swiperword1 "style=""> WITH US 위더스 투자그룹</h1>
+            <h4 style="font-family: 'Noto Sans KR', sans-serif;">위더스 투자그룹은<br>풍부한 실전경험과 핵심 기술을 바탕으로<br>개인 투자자분들의 보다 나은 미래에 동행하겠습니다.</h4>
            
         </div>
     </div>
 <div class="bodys1" style="">
-    <!-- <div id="particles">
-        <canvas class="pg-canvas" width="100%" height="1080" style="display: block;">
-        </canvas>
-    </div> -->
-
-    <div class="bodys1title" data-aos="fade-up"  data-aos-duration="2500" data-aos-anchor-placement="bottom-bottom"><h1></h1></div>
-
-    <div class="owl-carousel" style="top: 60; height:200px;">
-        <div class="item" onclick=""><img class="slideimg" style="" src="img/maintainance.png"></div>
-        <!-- <div class="item" onclick=""><img class="slideimg" style="" src="img/owl2.jpg"></div>
-        <div class="item" onclick=""><img class="slideimg" style="" src="img/owl3.jpg"></div>
-        <div class="item" onclick=""><img class="slideimg" style="" src="img/owl4.jpg"></div> -->
-
-    </div>
-
-    <div
-        id="blueimp-gallery"
-        class="blueimp-gallery"
-        aria-label="image gallery"
-        aria-modal="true"
-        role="dialog"
-        >
-        <div class="slides" aria-live="polite"></div>
-        <h3 class="title"></h3>
-        <a
-            class="prev"
-            aria-controls="blueimp-gallery"
-            aria-label="previous slide"
-            aria-keyshortcuts="ArrowLeft"
-        ></a>
-        <a
-            class="next"
-            aria-controls="blueimp-gallery"
-            aria-label="next slide"
-            aria-keyshortcuts="ArrowRight"
-        ></a>
-        <a
-            class="close"
-            aria-controls="blueimp-gallery"
-            aria-label="close"
-            aria-keyshortcuts="Escape"
-        ></a>
-        <a
-            class="play-pause"
-            aria-controls="blueimp-gallery"
-            aria-label="play slideshow"
-            aria-keyshortcuts="Space"
-            aria-pressed="false"
-            role="button"
-        ></a>
-        <ol class="indicator"></ol>
+    
+    <div class="maincarddeck card-deck">
+        <div class="maincard card">
+          
+          <div class="card-body">
+            <h5 class="maincardtitle card-title">공지사항</h5>
+            <p class="card-text"></p>
+            <p class="card-text"><small class="text-muted"></small></p>
+          </div>
         </div>
+        <div class="maincard card">
+          
+          <div class="card-body">
+            <h5 class="maincardtitle card-title">고객가이드</h5>
+            <p class="card-text"></p>
+            <p class="card-text"><small class="text-muted"></small></p>
+          </div>
+        </div>
+        <div class="maincard card">
+          
+          <div class="card-body">
+            <h5 class="maincardtitle card-title">자주 묻는 질문</h5>
+            <p class="card-text"></p>
+            <p class="card-text"><small class="text-muted"></small></p>
+          </div>
+        </div>
+      </div>
 
-    <!-- <div id="blueimp-gallery"class="blueimp-gallery blueimp-gallery-controls"aria-label="image gallery"aria-modal="true" role="dialog">
 
-    </div> -->
 
-    <script>
-$('.owl-carousel').owlCarousel({
-loop:true,
-margin:5,
-nav:false,
-startPosition:1,
-center:true,
-responsive:{
-    0:{
-        items:1,
-        center:false,
-    },
-    600:{
-        items:2
-    },
-    700:{
-        items:2
-    },
-    1000:{
-        items:4
-    }
-}
-});
-
-</script>
-
-<footer id="footer" style="margin-top: 200px;color: gray;font-family: 'Jua', sans-serif; background: beige;">
+<footer id="footer" style="margin-top: 200px;color: gray;font-family: 'Noto Sans KR', sans-serif; background: beige;">
     <div class="container">
          <div class="row">
 
@@ -221,7 +172,7 @@ responsive:{
                              <h3>(주)위더스투자그룹<br></h3>
                         </div>
                         <address>
-                             <p>부산광역시 부산진구 중앙대로 756번길 22 2층 201호</p>
+                             <p>부산광역시 부산동 102-6번길, 중앙대로 756번길 22 <br>2층 본사</p>
                         </address>
                    </div>
               </div>
@@ -248,7 +199,8 @@ responsive:{
               
          </div>
     </div>
-</div></div></footer>
+</div></div>
+</footer>
     
     <!-- <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" style="background-color:#fff;">
         <span>01</span>
@@ -294,6 +246,16 @@ responsive:{
     </script>
 
      <!-- 라이트박스 -->
+     <script src="js/lightbox/blueimp-helper.js"></script>
+     <script src="js/lightbox/blueimp-gallery.js"></script>
+     <script src="js/lightbox/blueimp-gallery-fullscreen.js"></script>
+     <script src="js/lightbox/blueimp-gallery-indicator.js"></script>
+     <script src="js/lightbox/blueimp-gallery-video.js"></script>
+     <script src="js/lightbox/blueimp-gallery-vimeo.js"></script>
+     <script src="js/lightbox/blueimp-gallery-youtube.js"></script>
+     <script src="js/lightbox/vendor/jquery.js"></script>
+     <script src="js/lightbox/jquery.blueimp-gallery.js"></script>
+     <script src="js/lightbox/demo/demo.js"></script>
 
     <!-- 스윗모달 -->
     <script src="js/jquery.sweet-modal.min.js"></script>

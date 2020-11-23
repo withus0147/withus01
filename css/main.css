@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+/* font-family: 'Black Han Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
 
 .headerbar {
 	background-color: #1f1f29;
@@ -14,9 +16,29 @@
 	/* opacity: 0.85; */
 }
 
+.logodiv{
+	position: absolute;
+    width: 500px;
+    margin-left: 50px;
+}
+
 .logoimg{
 	margin-left:7%;
 	width:150px;
+	margin-top: -50px;
+}
+
+.logospan1{
+	font-family: 'Black Han Sans', sans-serif;
+	color: #C92923;
+	font-size: 40;
+	margin-left: -30px;
+}
+
+.logospan2{
+	font-family: 'Black Han Sans', sans-serif;
+	color: white;
+	font-size: 70;
 }
 
 .navdiv {
@@ -27,14 +49,7 @@
 	z-index: 2;
 }
 
-.logodiv {
-	width: 100%;
-	/* float: left; */
-	/* margin-left: calc(50% - 3.35rem); */
-	position: absolute;
-	text-align: center;
-	/* z-index: -1; */
-}
+
 
 .headerright {
 	float: right;
@@ -83,6 +98,8 @@
     color: white;
 	margin-right: 50px;
 	font-size: 20;
+	font-weight: 500;
+    font-size: 27;
 }
 
 .headerbutton:hover {
@@ -104,18 +121,19 @@
 }
 
 .dropdown-menu{
-	background-color:#e67401
+	background-color:rgba( 31, 31, 41, 0.5 );
+	padding: 0;
 }
 .dropdown-menu ul {
-    background: #e67401;
+    background: rgba( 31, 31, 41, 0.5 )
 }
 
 .dropdown-menu .dropdown-anchor {
-	border: 7px solid #e67401;
+	border: 7px solid rgba( 31, 31, 41, 0.5 )
 }
 
 .dropdown-menu .dropdown-anchor::after {
-    border: 6px solid #e67401;
+    border: 6px solid rgba( 31, 31, 41, 0.5 )
 }
 
 .dropdown-menu ul li > a, .dropdown-menu ul li label
@@ -123,21 +141,27 @@
 	color:white;
 }
 
+.dropdown-menu ul li {
+    padding: 7;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
 
 
 .headerbuttondiv{
 	float: right;
-	margin-right: 200px;
-	margin-top: 55;
-	/* font-family: 'Noto Sans KR', sans-serif; */
-	font-family: 'Jua', sans-serif;
+	margin-right: 150px;
+	margin-top: 47;
+	font-family: 'Noto Sans KR', sans-serif;
+	/* font-family: 'Jua', sans-serif; */
 }
 
 .slideimg{
 	width: 100%; height: auto;
 }
 
-@media ( max-width : 1150px) {
+@media ( max-width : 1480px) {
 	.headerbutton {
 		width:unset;
 		margin-right: 10px;
@@ -148,14 +172,28 @@
 		top:63;
 		margin:0px;
 		position:absolute;
-		left:calc(50% - 348px/2);
+		left:calc(50% - 395px/2);
+	}
+
+	.logodiv{
+		position: absolute;
+    	margin-left: unset;
+    	width: 331px;
+    	left: calc(50% - 331px/2);
 	}
 	.logoimg{
-		position:absolute;
+		/* position:absolute; */
 
 		margin-left:unset;
-		width:110px;
-		left:calc(50% - 110px/2);
+		/* width:110px;
+		left:calc(50% - 110px/2); */
+		width:100px;
+	}
+	.logospan1{
+		font-size:30;
+	}
+	.logospan2{
+		font-size:60;
 	}
 	.slideimg{
 		width: auto; height: 100%;
@@ -185,14 +223,14 @@ to {top:0px; opacity: 1;}
 
 .swipercontentsdiv{
     position: absolute;
-    width: 70%;
-    height: 28%;
+    /* width: 70%; */
+    /* height: 28%; */
 	/* background-color: #32363F; */
 	background-color:rgba(50,54,63,0.5);
-	top: 68%;
+	top: 60%;
     z-index: 50;
 	/* opacity: 0.7; */
-	max-width: 45%;
+	/* max-w idth: 45%; */
 
 	animation:swipercontentsdivmove 3s ease-out forwards;
 	animation-iteration-count:1;
@@ -204,8 +242,12 @@ to {top:0px; opacity: 1;}
 
 
 	color: #fff;
-    text-align: right;
-    word-break: keep-all;
+    text-align: left;
+	word-break: keep-all;
+	
+	padding: 30px;
+    height: auto;
+    width: auto;
 
 }
 
@@ -259,4 +301,28 @@ to {left:0%; background-color:rgba(50,54,63,0.5);}
 }
 .owl-carousel .item{
 	text-align:center;
+}
+
+.swiperword1{
+	font-family: 'Black Han Sans', sans-serif;
+	/* -webkit-transform: scale(2,1);
+    -moz-transform: scale(2,1);
+    -ms-transform: scale(2,1);
+    -o-transform: scale(2,1);
+    transform: scale(1.1,1); */
+}
+
+.maincarddeck{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.maincard{
+	border: 4px solid #e67401;
+	min-height:300px;
+}
+
+.maincardtitle{
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 40px;
 }

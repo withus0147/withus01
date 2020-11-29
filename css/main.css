@@ -5,7 +5,7 @@
 /* font-family: 'Noto Sans KR', sans-serif; */
 
 .headerbar {
-	background-color: #1f1f29;
+	background-color: rgba( 31, 31, 41, 0.8 );
 	height: 100px;
 	position: fixed;
 	width: 100%;

@@ -19,13 +19,15 @@
 .logodiv{
 	position: absolute;
     width: 500px;
-    margin-left: 50px;
+	margin-left: 50px;
+	margin-top: 10px;
+	cursor:pointer;
 }
 
 .logoimg{
 	margin-left:7%;
 	width:150px;
-	margin-top: -50px;
+	margin-top: -70px;
 }
 
 .logospan1{
@@ -99,7 +101,6 @@
 	margin-right: 50px;
 	font-size: 20;
 	font-weight: 500;
-    font-size: 27;
 }
 
 .headerbutton:hover {
@@ -152,7 +153,7 @@
 .headerbuttondiv{
 	float: right;
 	margin-right: 150px;
-	margin-top: 47;
+	margin-top: 55;
 	font-family: 'Noto Sans KR', sans-serif;
 	/* font-family: 'Jua', sans-serif; */
 }
@@ -177,9 +178,10 @@
 
 	.logodiv{
 		position: absolute;
-    	margin-left: unset;
+		margin-left: unset;
+		margin-top: unset;
     	width: 331px;
-    	left: calc(50% - 331px/2);
+		left: calc(50% - 331px/2);
 	}
 	.logoimg{
 		/* position:absolute; */
@@ -187,6 +189,7 @@
 		margin-left:unset;
 		/* width:110px;
 		left:calc(50% - 110px/2); */
+		margin-top:-44px;
 		width:100px;
 	}
 	.logospan1{
@@ -292,6 +295,13 @@ to {left:0%; background-color:rgba(50,54,63,0.5);}
 	width:100%;
 }
 
+.bodys2{
+	position: absolute; 
+	top: 100px;
+	background-color:#1f1f29;
+	width:100%;
+}
+
 .bodys1title {
     position: absolute;
     margin-left: unset;
@@ -325,4 +335,23 @@ to {left:0%; background-color:rgba(50,54,63,0.5);}
 .maincardtitle{
     font-family: 'Black Han Sans', sans-serif;
     font-size: 40px;
+}
+
+.maincard_li{
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.page1carddeck{
+	margin-left: unset;
+    margin-right: unset;
+    padding: 14px;
+}
+
+.page1carddiv{
+	padding-left:7px;
+	padding-right:7px;
+	padding-bottom:7px;
+	padding-top:7px;
+	cursor:pointer;
 }

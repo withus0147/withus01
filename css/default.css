@@ -17,3 +17,11 @@ body::-webkit-scrollbar {
 	display: none;
 }
 
+.normalmodal{
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+	overflow-y: scroll;
+}
+.normalmodal::-webkit-scrollbar {
+	display: none;
+}

@@ -22,8 +22,8 @@
     <link rel="stylesheet" href="css/jquery.sweet-dropdown.css" />
 
     <!-- 페이드인 -->
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- 라이트박스 -->
     <!-- <link rel="stylesheet" href="css/lightbox/blueimp-gallery.css">
@@ -60,9 +60,9 @@
     
 	<header class="headerbar">
         <div class="logodiv">
-        <img class="logoimg" src="img/logo(noname).png">
-        <span class="logospan1">투자그룹</span>
-        <span class="logospan2">위더스</span>
+        <img class="logoimg" src="img/logo(noname).png" onclick="location.href='index.html'">
+        <span class="logospan1" onclick="location.href='index.html'">투자그룹</span>
+        <span class="logospan2" onclick="location.href='index.html'">위더스</span>
         </div>
         <div class="headerbuttondiv" >
         <button type="button" class="headerbutton btn btn-outline-primary" data-dropdown="#dropdown-standard1">회사소개</button>
@@ -73,7 +73,7 @@
                 <li><a href="#"onclick="notready();">위더스의 비전</a></li>
             </ul>
         </div>
-        <button type="button" class="headerbutton btn btn-outline-primary"onclick="notready2();">수익인증</button>
+        <button type="button" class="headerbutton btn btn-outline-primary" onclick="location.href='page1.html'">수익인증</button>
  
         <button type="button" class="headerbutton btn btn-outline-primary" data-dropdown="#dropdown-standard2">투자관리상품</button>
         <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor" id="dropdown-standard2">
@@ -134,23 +134,29 @@
 <div class="bodys1" style="">
     
     <div class="maincarddeck card-deck">
-        <div class="maincard card">
+        <div class="maincard card" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="2000" data-aos-delay="100">
           
           <div class="card-body">
             <h5 class="maincardtitle card-title">공지사항</h5>
+            <ui>
+                <li class="maincard_li"><a data-toggle="modal" data-target="#exampleModalLong">test</a></li>
+            </ui>
             <p class="card-text"></p>
             <p class="card-text"><small class="text-muted"></small></p>
           </div>
         </div>
-        <div class="maincard card">
+        <div class="maincard card" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="2000" data-aos-delay="200">
           
-          <div class="card-body">
+          <div class="card-body" >
             <h5 class="maincardtitle card-title">고객가이드</h5>
             <p class="card-text"></p>
             <p class="card-text"><small class="text-muted"></small></p>
           </div>
         </div>
-        <div class="maincard card">
+        <div class="maincard card" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="2000" data-aos-delay="300">
           
           <div class="card-body">
             <h5 class="maincardtitle card-title">자주 묻는 질문</h5>
@@ -162,14 +168,14 @@
 
 
 
-<footer id="footer" style="margin-top: 200px;color: gray;font-family: 'Noto Sans KR', sans-serif; background: beige;">
-    <div class="container">
+<footer id="footer" style="margin-top: 10px;color: #7b8582;font-family: 'Noto Sans KR', sans-serif; background: #f0f2f7;">
+    <div class="container" style="font-size:14px;">
          <div class="row">
 
               <div class="col-md-4 col-sm-6">
                    <div class="footer-info">
                         <div class="section-title">
-                             <h3>(주)위더스투자그룹<br></h3>
+                             <h6>(주)위더스투자그룹<br></h6>
                         </div>
                         <address>
                              <p>부산광역시 부산동 102-6번길, 중앙대로 756번길 22 <br>2층 본사</p>
@@ -180,7 +186,7 @@
               <div class="col-md-4 col-sm-6">
                    <div class="footer-info">
                         <div class="section-title">
-                             <h3>상담문의<br></h3>
+                             <h6>상담문의<br></h6>
                         </div>
                         <address>
                              <p>TEL&gt; 1588-0147</p>
@@ -191,7 +197,7 @@
               <div class="col-md-4 col-sm-6">
                    <div class="footer-info">
                         <div class="section-title">
-                             <h3>기업정보</h3>
+                             <h6>기업정보</h6>
                         </div>
                         <address>
                              <p>대표자/ 최근호 <br> 사업자등록번호/108-39-00702</p>
@@ -209,6 +215,26 @@
     </div> -->
 
 </div>
+<!-- bodys -->
+<div class="normalmodal modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">test</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        <div class="modal-footer">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
     <!-- 작성js -->
     <script>
         $(document).ready(function(){
@@ -245,8 +271,11 @@
 
     </script>
 
+    <!-- 메인스크립트 -->
+	<script src="js/main.js"></script>
+
      <!-- 라이트박스 -->
-     <script src="js/lightbox/blueimp-helper.js"></script>
+     <!-- <script src="js/lightbox/blueimp-helper.js"></script>
      <script src="js/lightbox/blueimp-gallery.js"></script>
      <script src="js/lightbox/blueimp-gallery-fullscreen.js"></script>
      <script src="js/lightbox/blueimp-gallery-indicator.js"></script>
@@ -255,7 +284,7 @@
      <script src="js/lightbox/blueimp-gallery-youtube.js"></script>
      <script src="js/lightbox/vendor/jquery.js"></script>
      <script src="js/lightbox/jquery.blueimp-gallery.js"></script>
-     <script src="js/lightbox/demo/demo.js"></script>
+     <script src="js/lightbox/demo/demo.js"></script> -->
 
     <!-- 스윗모달 -->
     <script src="js/jquery.sweet-modal.min.js"></script>

@@ -1,0 +1,484 @@
+<html>
+<head>
+
+    <!-- 제이쿼리 -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <!-- 부트스트랩 -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+
+    <!-- 회전목마 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <script src="js/owl.carousel.js"></script>
+
+    <!-- 스윗모달 -->
+    <link rel="stylesheet" href="css/jquery.sweet-modal.min.css">
+
+    <!-- 드롭다운 -->
+    <link rel="stylesheet" href="css/jquery.sweet-dropdown.css" />
+
+    <!-- 페이드인 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- 라이트박스 -->
+    <!-- <link rel="stylesheet" href="css/lightbox/blueimp-gallery.css">
+    <link rel="stylesheet" href="css/lightbox/blueimp-gallery-indicator.css">
+    <link rel="stylesheet" href="css/lightbox/blueimp-gallery-video.css">
+    <link rel="stylesheet" href="css/lightbox/demo/demo.css"> -->
+
+
+    <!-- 파티클 -->
+    <!-- <script type="text/javascript" src="js/demo.js"></script>
+    <script type="text/javascript" src="js/jquery.particleground.js"></script> -->
+
+    <!-- 스와이프박스 -->
+    <!-- <script src="swipebox/lib/jquery-2.0.3.js"></script>
+    <script src="swipebox/src/js/jquery.swipebox.js"></script>
+    <link rel="stylesheet" href="swipebox/src/css/swipebox.css"> -->
+    <!-- <script src="fslightbox.js"></script> -->
+
+
+    <!-- 작성CSS -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- 스크롤하이드 -->
+    <link rel="stylesheet" href="css/scrollhide.css">
+
+    <style>
+        .swiper-slide {
+            text-align: center;
+            background: black;
+        }
+    </style>
+
+    <script>
+
+    </script>
+
+</head>
+
+<body>
+    
+	<header class="headerbar">
+        <div class="logodiv">
+        <img class="logoimg" src="img/logo(noname).png" onclick="location.href='index.html'">
+        <span class="logospan1" onclick="location.href='index.html'">투자그룹</span>
+        <span class="logospan2" onclick="location.href='index.html'">위더스</span>
+        </div>
+        <div class="headerbuttondiv" >
+        <button type="button" class="headerbutton btn btn-outline-primary" data-dropdown="#dropdown-standard1">회사소개</button>
+        <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor" id="dropdown-standard1">
+            <ul>
+                <li><a href="#"onclick="notready();">회사소개</a></li>
+                <li><a href="#"onclick="notready();">시스템</a></li>
+                <li><a href="#"onclick="notready();">위더스의 비전</a></li>
+            </ul>
+        </div>
+        <button type="button" class="headerbutton btn btn-outline-primary" onclick="location.href='page1.html'">수익인증</button>
+ 
+        <button type="button" class="headerbutton btn btn-outline-primary" data-dropdown="#dropdown-standard2">투자관리상품</button>
+        <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor" id="dropdown-standard2">
+            <ul>
+                <li><a href="#"onclick="notready();">브론즈</a></li>
+                <li><a href="#"onclick="notready();">실버</a></li>
+                <li><a href="#"onclick="notready();">골드</a></li>
+                <li><a href="#"onclick="notready();">플레티넘</a></li>
+            </ul>
+        </div>
+        <button type="button" class="headerbutton btn btn-outline-primary"data-dropdown="#dropdown-standard3">고객센터</button>
+        <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor" id="dropdown-standard3">
+            <ul>
+                <li><a href="#"onclick="notready();">공지사항</a></li>
+                <li><a href="#"onclick="notready();">FAQ</a></li>
+                <li><a href="#"onclick="notready();">고객가이드</a></li>
+            </ul>
+        </div>
+        </div>
+        <!-- <div class="logodiv">
+            <img src="img/logo(noname).png" width="90">
+            <span style="color: black; font-family: 'Nanum Gothic', sans-serif;">WITH US 투자그룹</span>
+        </div> -->
+    </header>
+
+    
+
+    
+	<!-- <header class="nav-down">
+	    <div id="scrolling" class="navbar navbar-dark">
+            <button type="button" class="btn btn-outline-light">Light</button>
+            <div style="width: 100%;text-align: center;">
+           
+            </div>
+        </div>
+
+		</div>
+    </header> -->
+ 
+<div class="bodys2" style="">
+
+    <div class="row row-cols-12 page1carddeck" style="">
+
+        <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 page1carddiv" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="2000" data-aos-delay="100">
+          <div class="card" data-toggle="modal" data-target="#exampleModalLong">
+            <img class="card-img-top" data-src="holder.js/100px180/?text=Image cap" alt="Image cap [100%x180]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17611f88775%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17611f88775%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.1171875%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+          <div class="card-body">
+            <p class="card-text">내용 요약</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">2020.11.29</small>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 page1carddiv" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="2000" data-aos-delay="200">
+          <div class="card" data-toggle="modal" data-target="#exampleModalLong">
+            <img class="card-img-top" data-src="holder.js/100px180/?text=Image cap" alt="Image cap [100%x180]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17611f88775%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17611f88775%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.1171875%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+          <div class="card-body">
+            <p class="card-text">내용 요약</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">2020.11.29</small>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 page1carddiv" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="2000" data-aos-delay="100">
+          <div class="card" data-toggle="modal" data-target="#exampleModalLong">
+            <img class="card-img-top" data-src="holder.js/100px180/?text=Image cap" alt="Image cap [100%x180]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17611f88775%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17611f88775%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.1171875%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+          <div class="card-body">
+            <p class="card-text">내용 요약</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">2020.11.29</small>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 page1carddiv" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="2000" data-aos-delay="200">
+          <div class="card" data-toggle="modal" data-target="#exampleModalLong">
+            <img class="card-img-top" data-src="holder.js/100px180/?text=Image cap" alt="Image cap [100%x180]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17611f88775%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17611f88775%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.1171875%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+          <div class="card-body">
+            <p class="card-text">내용 요약</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">2020.11.29</small>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 page1carddiv" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="2000" data-aos-delay="100">
+          <div class="card" data-toggle="modal" data-target="#exampleModalLong">
+            <img class="card-img-top" data-src="holder.js/100px180/?text=Image cap" alt="Image cap [100%x180]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17611f88775%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17611f88775%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.1171875%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+          <div class="card-body">
+            <p class="card-text">내용 요약</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">2020.11.29</small>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 page1carddiv" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="2000" data-aos-delay="200">
+          <div class="card" data-toggle="modal" data-target="#exampleModalLong">
+            <img class="card-img-top" data-src="holder.js/100px180/?text=Image cap" alt="Image cap [100%x180]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17611f88775%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17611f88775%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.1171875%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+          <div class="card-body">
+            <p class="card-text">내용 요약</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">2020.11.29</small>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 page1carddiv" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="2000" data-aos-delay="100">
+          <div class="card" data-toggle="modal" data-target="#exampleModalLong">
+            <img class="card-img-top" data-src="holder.js/100px180/?text=Image cap" alt="Image cap [100%x180]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17611f88775%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17611f88775%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.1171875%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+          <div class="card-body">
+            <p class="card-text">내용 요약</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">2020.11.29</small>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 page1carddiv" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="2000" data-aos-delay="200">
+          <div class="card" data-toggle="modal" data-target="#exampleModalLong">
+            <img class="card-img-top" data-src="holder.js/100px180/?text=Image cap" alt="Image cap [100%x180]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17611f88775%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17611f88775%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.1171875%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+          <div class="card-body">
+            <p class="card-text">내용 요약</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">2020.11.29</small>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 page1carddiv" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="2000" data-aos-delay="100">
+          <div class="card" data-toggle="modal" data-target="#exampleModalLong">
+            <img class="card-img-top" data-src="holder.js/100px180/?text=Image cap" alt="Image cap [100%x180]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17611f88775%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17611f88775%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.1171875%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+          <div class="card-body">
+            <p class="card-text">내용 요약</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">2020.11.29</small>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 page1carddiv" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="2000" data-aos-delay="200">
+          <div class="card" data-toggle="modal" data-target="#exampleModalLong">
+            <img class="card-img-top" data-src="holder.js/100px180/?text=Image cap" alt="Image cap [100%x180]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17611f88775%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17611f88775%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.1171875%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+          <div class="card-body">
+            <p class="card-text">내용 요약</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">2020.11.29</small>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 page1carddiv" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="2000" data-aos-delay="100">
+          <div class="card" data-toggle="modal" data-target="#exampleModalLong">
+            <img class="card-img-top" data-src="holder.js/100px180/?text=Image cap" alt="Image cap [100%x180]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17611f88775%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17611f88775%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.1171875%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+          <div class="card-body">
+            <p class="card-text">내용 요약</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">2020.11.29</small>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 page1carddiv" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="2000" data-aos-delay="200">
+          <div class="card" data-toggle="modal" data-target="#exampleModalLong">
+            <img class="card-img-top" data-src="holder.js/100px180/?text=Image cap" alt="Image cap [100%x180]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17611f88775%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17611f88775%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.1171875%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+          <div class="card-body">
+            <p class="card-text">내용 요약</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">2020.11.29</small>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 page1carddiv" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="2000" data-aos-delay="100">
+          <div class="card" data-toggle="modal" data-target="#exampleModalLong">
+            <img class="card-img-top" data-src="holder.js/100px180/?text=Image cap" alt="Image cap [100%x180]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17611f88775%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17611f88775%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.1171875%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+          <div class="card-body">
+            <p class="card-text">내용 요약</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">2020.11.29</small>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 page1carddiv" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="2000" data-aos-delay="200">
+          <div class="card" data-toggle="modal" data-target="#exampleModalLong">
+            <img class="card-img-top" data-src="holder.js/100px180/?text=Image cap" alt="Image cap [100%x180]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17611f88775%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17611f88775%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.1171875%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+          <div class="card-body">
+            <p class="card-text">내용 요약</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">2020.11.29</small>
+          </div>
+          </div>
+        </div>
+
+        
+
+       
+    </div>
+
+
+
+
+        
+        
+<!-- Media Links -->
+
+  
+  <!-- <a href="https://www.jqueryscript.net/tags.php?/Carousel/">Carousel</a> Controls -->
+  
+    
+    <script>
+
+    </script>
+
+
+
+
+<footer id="footer" style="margin-top: 10px;color: #7b8582;font-family: 'Noto Sans KR', sans-serif; background: #f0f2f7;">
+    <div class="container" style="font-size:14px;">
+         <div class="row">
+
+              <div class="col-md-4 col-sm-6">
+                   <div class="footer-info">
+                        <div class="section-title">
+                             <h6>(주)위더스투자그룹<br></h6>
+                        </div>
+                        <address>
+                             <p>부산광역시 부산동 102-6번길, 중앙대로 756번길 22 <br>2층 본사</p>
+                        </address>
+                   </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6">
+                   <div class="footer-info">
+                        <div class="section-title">
+                             <h6>상담문의<br></h6>
+                        </div>
+                        <address>
+                             <p>TEL&gt; 1588-0147</p>
+
+                        </address>
+                   </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                   <div class="footer-info">
+                        <div class="section-title">
+                             <h6>기업정보</h6>
+                        </div>
+                        <address>
+                             <p>대표자/ 최근호 <br> 사업자등록번호/108-39-00702</p>
+                        </address>
+              
+         </div>
+    </div>
+</div></div>
+</footer>
+    
+    <!-- <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" style="background-color:#fff;">
+        <span>01</span>
+        <h3>전문가와 1대1 상담</h3>
+        <p>카카오톡 개인 상담을 통해 업계 최고라고 자부할 수 있는 전문가들과의 원활한 상담을 제공합니다.</p>
+    </div> -->
+
+</div>
+<!-- bodys -->
+<div class="normalmodal modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">test</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        <div class="modal-footer">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 작성js -->
+    <script>
+        $(document).ready(function(){
+            
+        });
+
+        function notready(){
+            $.sweetModal({
+                content: '잠시만 기다려주세요',
+                title: '현재 홈페이지 개발중입니다',
+                icon: $.sweetModal.ICON_ERROR,
+                buttons: [
+                {
+                    label: '확인',
+                    classes: 'redB'
+                }
+            ]
+        });
+        }
+
+        function notready2(){
+            $.sweetModal({
+                content: '체험 문의 - TEL 1588-0147',
+                title: '현재 홈페이지 개발중입니다',
+                icon: $.sweetModal.ICON_ERROR,
+                buttons: [
+                {
+                    label: '확인',
+                    classes: 'redB'
+                }
+            ]
+        });
+        }
+
+    </script>
+
+    <!-- 메인스크립트 -->
+	<script src="js/main.js"></script>
+
+     <!-- 라이트박스 -->
+     <!-- <script src="js/lightbox/blueimp-helper.js"></script>
+     <script src="js/lightbox/blueimp-gallery.js"></script>
+     <script src="js/lightbox/blueimp-gallery-fullscreen.js"></script>
+     <script src="js/lightbox/blueimp-gallery-indicator.js"></script>
+     <script src="js/lightbox/blueimp-gallery-video.js"></script>
+     <script src="js/lightbox/blueimp-gallery-vimeo.js"></script>
+     <script src="js/lightbox/blueimp-gallery-youtube.js"></script>
+     <script src="js/lightbox/vendor/jquery.js"></script>
+     <script src="js/lightbox/jquery.blueimp-gallery.js"></script>
+     <script src="js/lightbox/demo/demo.js"></script> -->
+
+    <!-- 스윗모달 -->
+    <script src="js/jquery.sweet-modal.min.js"></script>
+
+    <!-- 드롭다운 -->
+    <script src="js/jquery.sweet-dropdown.js"></script>
+	<!-- 스크롤하이드 -->
+    <script src="js/scrollhide.js"></script>
+    <!-- 회전목마 -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container',{
+        speed: 3000,    
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        });
+
+       
+        
+    </script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

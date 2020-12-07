@@ -348,8 +348,9 @@ to {left:0%; background-color:rgba(50,54,63,0.5);}
 }
 
 .maincardtitle{
-    font-family: 'Black Han Sans', sans-serif;
-    font-size: 40px;
+	/* font-family: 'Black Han Sans', sans-serif; */
+	font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-size: 20px;
 }
 
 .maincard_li{
